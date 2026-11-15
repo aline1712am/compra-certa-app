@@ -28,3 +28,9 @@ use the editor.
   own key and store it in Secrets.
 - **Secrets.** Lovable manages them. Do not put secret values in the repo.
 <!-- LOVABLE:END -->
+
+<!-- AGENT-MEMORY:BEGIN -->
+- Keep the shared application shell and reusable initial-screen presentation in a shared component; leaf routes provide their own metadata to avoid duplicating layouts.
+- Initial screens are presentation-only: do not persist data or activate creation controls until a later stage is authorized.
+- Define visual roles in src/styles.css and use the existing shadcn Button for interactions to keep the visual system consistent.
+<!-- AGENT-MEMORY:END -->
